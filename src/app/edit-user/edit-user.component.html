@@ -1,0 +1,18 @@
+<div>
+    <form [formGroup]="userForm">
+        <label for="firstname">First Name </label>
+        <input type="text" placeholder="User Name" formControlName="firstName">
+
+        <label for="lastname">Last Name</label>
+        <input type="text" placeholder="Last Name" formControlName="lastName">
+
+        <label for="phone">Phone</label>
+        <input type="text" placeholder="Phone" formControlName="phoneNo">
+
+        <label for="email">Email</label>
+        <input type="text" placeholder="Email" formControlName="email">
+
+        <button (click)="submit()" [disabled]="userForm.invalid">Update</button>&nbsp;&nbsp;
+        <button (click)="cancel()">Cancel</button>
+    </form>
+</div>
